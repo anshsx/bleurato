@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 	const user = useRecoilValue(userAtom);
 
 	useEffect(() => {
-		const socket = io("/", {
+		const socket = io("https://special-space-disco-q77r4jqjp947397g6-5000.app.github.dev/", {
 			query: {
 				userId: user?._id,
 			},
